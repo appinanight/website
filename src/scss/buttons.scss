@@ -1,0 +1,92 @@
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+}
+
+.c-btn {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    margin-top: 12px;
+    padding: 1.1em 2em;
+    overflow: hidden;
+    transition: color .15s $ease,background-color .15s $ease,border-color .15s $ease,box-shadow .15s $ease;
+    border-radius: 54px;
+    background-color: transparent;
+    color: $primary;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    @media(min-width: $md) {
+        font-size: 18px;
+    }
+    &--primary {
+        background-color: $primary;
+        color: #fff;
+        &:before {
+            background: darken($primary, 15%);
+        }
+    }
+    &--secondary {
+        background-color: $secondary;
+        color: #fff;
+        &:before {
+            background: darken($secondary, 10%);
+        }
+    }
+    &--fixed {
+        display: inline-block;
+        width: 230px;
+        text-align: center;
+    }
+
+    &__ink {
+        display: block;
+        position: absolute;
+        animation: ripple-effect-reverse .45s;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .06);
+        animation-fill-mode: forwards;
+    }
+
+    &__ink--active {
+        animation: ripple-effect .5s;
+        animation-fill-mode: forwards;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+}
+
+@keyframes ripple-effect {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(2.5)
+    }
+}
+
+@keyframes ripple-effect-reverse {
+    0% {
+        transform: scale(2.5)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}

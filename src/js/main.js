@@ -1,13 +1,3 @@
-if(true === process.env.DEV) {
-    require("@khanacademy/tota11y/dist/tota11y.min.js")
-}
+import * as Buttons from './buttons';
 
-const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('done!');
-    }, 1000)
-})
-
-promise.then(res => {
-    console.log(res)
-})
+Buttons.init();
