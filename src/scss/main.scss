@@ -1,16 +1,30 @@
-@use './typography';
-@use './vars';
+@import './typography';
+@import './vars';
+@import './utilities';
+@import './layout';
 
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
 body {
+    color: $body;
     // SASS namespacing example
-    font-family: vars.$fontFamily;
+    font-family: $fontFamily;
+    @media(min-width: $md) {
+        font-size: 20px;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: vars.$fontFamilyAlt;
+    color: $title;
+    font-family: $fontFamilyAlt;
     font-weight: bold;
+}
+
+h1, .h1 {
+    font-size: 35px;
+    @media(min-width: $md) {
+        font-size: 54px;
+    }
 }
