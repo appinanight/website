@@ -1,0 +1,16 @@
+@use './typography';
+@use './vars';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    // SASS namespacing example
+    font-family: vars.$fontFamily;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: vars.$fontFamilyAlt;
+    font-weight: bold;
+}

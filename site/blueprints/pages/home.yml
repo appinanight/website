@@ -1,0 +1,12 @@
+title: Home
+icon: home
+
+options: 
+  extends: options/none
+
+columns:
+  - width: 2/3
+    sections:
+      main:
+        type: fields
+        fields:
