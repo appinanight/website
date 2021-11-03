@@ -1,0 +1,37 @@
+.c-header {
+    &__inner {
+        @media(min-width: $md) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__part {
+        @media(min-width: $md) {
+            flex: 1;
+            &:last-of-type {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.c-nav {
+    list-style: none;
+    a {
+        color: $title;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    li {
+        margin: 0 8px;
+    }
+    @media(min-width: $md) {
+        display: flex;
+        align-items: center;
+        .c-btn {
+            margin: 0;
+        }
+    }
+}
