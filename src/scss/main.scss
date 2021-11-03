@@ -4,15 +4,20 @@
 @import './layout';
 @import './buttons';
 @import './title';
+@import './cols';
+@import './hero';
 
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ECF7FF 0%, rgba(236, 247, 255, 0.5) 50.52%, rgba(236, 247, 255, 0) 100%);
     color: $body;
     // SASS namespacing example
     font-family: $fontFamily;
+    line-height: 2.2em;
     @media(min-width: $md) {
         font-size: 20px;
     }
@@ -22,6 +27,7 @@ h1,h2,h3,h4,h5,h6 {
     color: $title;
     font-family: $fontFamilyAlt;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 h1, .h1 {
