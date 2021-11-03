@@ -11,8 +11,5 @@
     display: inline-block;
     position: absolute;
     transform: translateY(100%);
-    &:last-of-type {
-        transform: translateY(0%);
-    }
 }
 
