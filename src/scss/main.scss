@@ -13,9 +13,14 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
-
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(180deg, #ECF7FF 0%, rgba(236, 247, 255, 0.5) 50.52%, rgba(236, 247, 255, 0) 100%);
     color: $body;
     // SASS namespacing example
