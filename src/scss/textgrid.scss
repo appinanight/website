@@ -1,0 +1,8 @@
+.c-textgrid {
+    &__title {
+        font-size: 30px;
+        @media(min-width: $md) {
+            font-size: 46px;
+        }
+    }
+}

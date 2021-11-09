@@ -7,10 +7,12 @@
 
 .c-hero__col {
     &:last-of-type {
+        display: none;
         position: absolute;
         top: 0;
         right: 0;
         @media(min-width: $md) {
+            display: block;
             position: relative;
         }
     }
