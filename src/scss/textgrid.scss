@@ -11,3 +11,10 @@
         }
     }
 }
+
+.c-textgrid__item__content {
+    padding-left: 25px;
+    @media(min-width: $md) {
+        padding-left: 50px;
+    }
+}
