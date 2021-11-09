@@ -39,3 +39,11 @@ h1, .h1 {
         font-size: 54px;
     }
 }
+
+h2, .h2 {
+    margin-bottom: 0.55em;
+    font-size: 24px;
+    @media(min-width: $md) {
+        font-size: 46px;
+    }
+}

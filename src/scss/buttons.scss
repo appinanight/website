@@ -67,9 +67,25 @@ button {
         position: relative;
         z-index: 2;
     }
+}
 
-
-
+.c-link-btn {
+    color: $title;
+    font-weight: bold;
+    text-decoration: none;
+    span {
+        white-space: nowrap;
+    }
+    svg {
+        display: inline-block;
+        margin-left: 0.4em;
+        vertical-align: -0.1em;
+    }
+    &--alt {
+        .svg-element {
+            fill: $secondary;
+        }
+    }
 }
 
 @keyframes ripple-effect {
