@@ -7,11 +7,15 @@
         padding: 30px;
         @media(min-width: $md) {
             display: flex;
+            padding: 70px;
         }
     }
     &__part {
         &+.c-footer__part {
             margin-top: 30px;
+            @media(min-width: $md) {
+                margin-top: 0;
+            }
         }
         @media(min-width: $md) {
             width: 33.3333%;
