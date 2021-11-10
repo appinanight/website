@@ -1,0 +1,59 @@
+.c-form {
+    
+}
+
+.c-input {
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 53px;
+    background-color: #ECF7FF;
+    font-family: inherit;
+    font-size: 16px;
+    appearance: none;
+    @media(min-width: $md) {
+        padding: 18px 33px;
+    }
+    &::placeholder {
+        color: #011C27;
+        font-family: inherit;
+    }
+}
+
+.c-form__submit {
+    display: table;
+    svg {
+        vertical-align: -0.1em;
+        @media(min-width: $md) {
+            margin-left: 12px;
+        }
+    }
+}
+
+.c-form__submit-text {
+    display: none;
+    @media(min-width: $md) {
+        display: inline;
+    }
+}
+
+.c-form__submit-wrapper {
+    display: flex;
+    .c-input {
+        flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .c-form__submit {
+        margin: 0;
+        padding: 0 18px 0 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        @media(min-width: $md) {
+            margin-left: -20px;
+            padding: 18px 25px;
+            border-radius: 53px;
+        }
+    }
+}

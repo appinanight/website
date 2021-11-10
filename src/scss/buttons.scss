@@ -11,7 +11,7 @@ button {
     position: relative;
     align-items: center;
     margin-top: 12px;
-    padding: 1.1em 2em;
+    padding: 1.1em 1.5em;
     overflow: hidden;
     transition: color .15s $ease,background-color .15s $ease,border-color .15s $ease,box-shadow .15s $ease;
     border-radius: 54px;
@@ -27,6 +27,7 @@ button {
     cursor: pointer;
     user-select: none;
     @media(min-width: $md) {
+        padding: 1.1em 2em;
         font-size: 18px;
     }
     &--primary {
@@ -45,8 +46,10 @@ button {
     }
     &--fixed {
         display: inline-block;
-        width: 230px;
         text-align: center;
+        @media(min-width: $md) {
+            width: 230px;
+        }
     }
 
     &__ink {
@@ -73,12 +76,18 @@ button {
     color: $title;
     font-weight: bold;
     text-decoration: none;
+    &:hover {
+        svg {
+            transform: translateX(8px);
+        }
+    }
     span {
         white-space: nowrap;
     }
     svg {
         display: inline-block;
         margin-left: 0.4em;
+        transition: 0.12s $ease;
         vertical-align: -0.1em;
     }
     &--alt {

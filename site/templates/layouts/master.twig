@@ -31,6 +31,8 @@
 		
 		{% block content %}{% endblock %}
 
+		{% include '@snippets/footer.twig' %}
+
 
 		{% if is_production_environment() %}
 			<!-- GOOGLE ANALYTICS -->

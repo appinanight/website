@@ -8,3 +8,14 @@
         padding: 0 40px;
     }
 }
+
+.o-section {
+    margin: 40px 0;
+    @media(min-width: $md) {
+        margin: 130px 0;
+    }
+}
+
+p:first-of-type {
+    margin-top: 0;
+}

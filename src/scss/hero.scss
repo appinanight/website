@@ -18,10 +18,14 @@
     }
     @media(min-width: $md) {
         width: 50%;
+        &:first-of-type {
+            align-self: center;
+        }
     }
 }
 
 .c-mock {
+    margin-bottom: -20%;
     svg {
         width: 100%;
     }
