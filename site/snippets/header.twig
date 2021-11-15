@@ -1,31 +1,40 @@
 <div class="c-header">
     <div class="o-container">
+        <div class="c-header__mobile">
+            <a href="javascript:;" class="c-header__mobile-item js-nav-trigger">
+                {{ source('@snippets/svg/_hamburger.svg') }}
+            </a>
+            <a href="javascript:;" class="c-header__mobile-item">
+                {{ source('@snippets/svg/_mail.svg') }}
+            </a>
+        </div>
         <div class="c-header__inner">
+            <span class="c-header__inner-bg"></span>
             <div class="c-header__part">
                 {{ source('@snippets/svg/_logo.svg') }}
             </div>
             <div class="c-header__part">
                 <ul class="c-nav">
-                    <li>
+                    <li class="js-nav-clip">
                         <a href="#">Apps</a>
                     </li>
-                    <li>
+                    <li class="js-nav-clip">
                         <a href="#">Websites</a>
                     </li>
-                    <li>
+                    <li class="js-nav-clip">
                         <a href="#">Even kennismaken</a>
                     </li>
                 </ul>
             </div>
             <div class="c-header__part">
                 <ul class="c-nav">
-                    <li>
-                        <a href="#">NL</a>
+                    <li class="js-nav-clip">
+                        <a href="#" class="c-nav-meta">NL</a>
                     </li>
-                    <li>
-                        <a href="#">EN</a>
+                    <li class="js-nav-clip">
+                        <a href="#" class="c-nav-meta">EN</a>
                     </li>
-                    <li>
+                    <li class="js-nav-clip">
                         <a href="#" class="c-btn c-btn--primary">Contact</a>
                     </li>
                 </ul>
