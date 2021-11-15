@@ -59,12 +59,22 @@
     padding: 0;
     list-style: none;
     a {
+        transition: 0.12s $ease;
         color: $title;
         font-size: 25px;
         font-weight: bold;
         text-decoration: none;
         @media(min-width: $md) {
             font-size: 18px;
+            &:hover {
+                &:not(.c-btn) {
+                    color: $secondary;
+                }
+                &.c-nav-meta {
+                    opacity: 1;
+                    color: $title;
+                }
+            }
         }
     }
     li {
