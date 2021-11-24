@@ -11,11 +11,43 @@
 
 .o-section {
     margin: 40px 0;
+    &--small {
+        margin: 30px 0;
+    }
     @media(min-width: $md) {
         margin: 130px 0;
+        &--small {
+            margin: 60px 0;
+        }
     }
 }
 
 p:first-of-type {
     margin-top: 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+.o-default {
+    a {
+        color: $primary;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.o-text-small {
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+.c-title-icon {
+    margin-right: 0.6em;
+    vertical-align: middle;
 }

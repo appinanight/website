@@ -2,11 +2,14 @@
     position: relative;
     @media(min-width: $md) {
         display: flex;
+        &--alt {
+            padding-top: 130px;
+        }
     }
 }
 
 .c-hero__col {
-    &:last-of-type {
+    &:last-of-type:not(:first-of-type) {
         display: none;
         position: absolute;
         top: 0;

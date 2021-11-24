@@ -4,6 +4,9 @@
     top: 0;
     left: 0;
     width: 100%;
+    @media(min-width: $md) {
+        position: absolute;
+    }
     &__inner {
         display: flex;
         position: absolute;
@@ -15,6 +18,7 @@
         height: 100vh;
         padding: 20px 0;
         text-align: center;
+        pointer-events: none;
         @media(min-width: $md) {
             display: flex;
             position: relative;
@@ -24,6 +28,7 @@
             height: auto;
             padding: 0;
             text-align: left;
+            pointer-events: all;
         }
     }
     &__part {
