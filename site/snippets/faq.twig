@@ -1,0 +1,18 @@
+<div class="o-section">
+    <div class="o-container">
+        <h2 class="u-center h1">Veelgestelde vragen</h2>
+        <div class="c-faq">
+            {% for item in 1..7 %}
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Dolor eget iaculis nunc tincidunt mi in arcu est aliquam, odio nulla non fames vitae?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <p>Een volledig maatwerk App laten bouwen? Dan ben je bij ons aan het juiste adres! Wij onderzoeken graag samen met jou wat de mogelijkheden zijn. Geheel vrijblijvend natuurlijk!</p>
+                    </div>
+                </div>    
+            {% endfor %}
+        </div>
+    </div>
+</div>
