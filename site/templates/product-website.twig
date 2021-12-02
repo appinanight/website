@@ -3,13 +3,13 @@
 {# 
     Use the bodyClass block to add an additional class to <body> for this template 
 #}
-{% block bodyClass 'additional-class' %}
+{% block bodyClass 'white' %}
 
 {% block content %}
     <div class="o-container">
         <div class="c-hero c-hero--alt">
             <div class="c-hero__col">
-                <h1 class="h1">Ontdek de voordelen<br>van een <span class="u-primary">website</span>.</h2>
+                <h1 class="h1">Ontdek de voordelen<br>van een <span class="u-secondary">website</span>.</h2>
                 <div class="o-default">
                     <p>Zie hieronder een klein overzicht van wat een nieuwe website voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="#">contact</a> op!</p>
                 </div>
@@ -17,7 +17,8 @@
         </div>
     </div>
 
-    <div class="o-section o-section--small">
+    <div class="o-section o-section--small u-relative">
+        <span class="c-blob"></span>
         <div class="o-container">
             <div class="c-items">
                 {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/responsive.svg'), text: 'Volledig responsive' }) }}

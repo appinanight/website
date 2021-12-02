@@ -1,0 +1,120 @@
+{% extends 'layouts/master.twig' %}
+
+{# 
+    Use the bodyClass block to add an additional class to <body> for this template 
+#}
+{% block bodyClass 'white' %}
+
+{% block content %}
+    <div class="o-container">
+        <div class="c-hero c-hero--alt">
+            <div class="c-hero__col">
+                <h1 class="h1">Ontdek de voordelen<br>van een <span class="u-primary">app</span>.</h2>
+                <div class="o-default">
+                    <p>Zie hieronder een klein overzicht van wat een app voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="#">contact</a> op!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="o-section o-section--small u-relative">
+        <span class="c-blob"></span>
+        <div class="o-container">
+            <div class="c-items">
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/responsive.svg'), text: 'Volledig responsive' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/edit.svg'), text: 'Zelf te beheren' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/light.svg'), text: 'Eindeloze mogelijkheden' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/scalable-blue.svg'), text: 'Schaalbaar en flexibel' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/share.svg'), text: 'Deel jouw projecten' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/push-notifications.svg'), text: 'Dé manier om je klanten of gebruikers te bereiken.' }) }}
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="o-section o-section--small u-relative">
+        <div class="o-container">
+            <h2>Welke past het beste<br>bij jou?</h2>
+            
+            <div class="c-packs">
+                {% for i in 1..3 %}
+                    <div class="c-pack">
+                        <div class="c-pack__inner">
+                            <h3 class="c-pack__title">Single Platform</h3>
+                            <ul class="c-pack__list">
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Jouw website in een app</li>
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Voor Android óf iOS</li>
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Push-notificaties</li>
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Altijd up-to-date</li>
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Custom splash screen en icon</li>
+                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
+                            </ul>
+                        </div>    
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+
+    <div class="o-section u-hidden">
+        <div class="o-container">
+            <h2>Een website bouwen<br>in <span class="u-secondary">5 stappen</span>.</h2>
+
+            <div class="c-switch js-switch">
+                <ul class="c-switch__nav">
+                    <li class="c-switch__nav-item">
+                        <a href="javascript:;" class="js-switch-trigger is-active" data-switch-target="1">
+                            <span class="c-switch__nav-counter">1</span>
+                            <span class="c-switch__nav-label">Pakket keuze</span>
+                        </a>
+                    </li>
+                    <li class="c-switch__nav-item">
+                        <a href="javascript:;" class="js-switch-trigger" data-switch-target="2">
+                            <span class="c-switch__nav-counter">2</span>
+                            <span class="c-switch__nav-label">Validatie</span>
+                        </a>
+                    </li>
+                    <li class="c-switch__nav-item">
+                        <a href="javascript:;" class="js-switch-trigger" data-switch-target="3">
+                            <span class="c-switch__nav-counter">3</span>
+                            <span class="c-switch__nav-label">Uploaden</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="c-switch__content">
+                    <div class="js-switch-item" data-switch-element="1">
+                        <h2 class="c-switch__title js-switch-item-title">Pakket keuze</h2>
+                        <div class="js-switch-item-content">
+                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
+                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                        </div>
+                        <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/discover.svg') }}</div>
+                    </div>
+                    <div class="js-switch-item" data-switch-element="2">
+                        <h2 class="c-switch__title js-switch-item-title">Validatie</h2>
+                        <div class="js-switch-item-content">
+                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
+                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                        </div>
+                        <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/define.svg') }}</div>
+                    </div>
+                    <div class="js-switch-item" data-switch-element="3">
+                        <h2 class="c-switch__title js-switch-item-title">Uploaden</h2>
+                        <div class="js-switch-item-content">
+                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
+                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                        </div>
+                        <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/design.svg') }}</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% include '@snippets/faq.twig' %}
+
+{% endblock %}
