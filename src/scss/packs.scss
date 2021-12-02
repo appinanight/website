@@ -23,6 +23,9 @@
             .c-pack__title {
                 color: #fff;
             }
+            .c-btn {
+                box-shadow: none;
+            }
         }
         @media(min-width: $md) {
             padding: 60px 50px;
