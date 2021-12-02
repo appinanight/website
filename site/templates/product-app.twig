@@ -37,21 +37,47 @@
             <h2>Welke past het beste<br>bij jou?</h2>
             
             <div class="c-packs">
-                {% for i in 1..3 %}
-                    <div class="c-pack">
-                        <div class="c-pack__inner">
-                            <h3 class="c-pack__title">Single Platform</h3>
-                            <ul class="c-pack__list">
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Jouw website in een app</li>
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Voor Android óf iOS</li>
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Push-notificaties</li>
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Altijd up-to-date</li>
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Custom splash screen en icon</li>
-                                <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
-                            </ul>
-                        </div>    
-                    </div>
-                {% endfor %}
+                <div class="c-pack">
+                    <div class="c-pack__inner">
+                        <h3 class="c-pack__title">Single Platform</h3>
+                        <ul class="c-pack__list">
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Jouw website in een app</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Voor Android <strong>óf</strong> iOS</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Push-notificaties</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Altijd up-to-date</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Custom splash screen en icon</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
+                        </ul>
+                        <span class="c-pack__price u-center">€699,-</span>
+                        <a href="#" class="c-btn c-btn--primary">Kies pakket</a>
+                    </div>    
+                </div>
+                <div class="c-pack">
+                    <div class="c-pack__inner">
+                        <h3 class="c-pack__title">Multi Platform</h3>
+                        <ul class="c-pack__list">
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Jouw website in een app</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Voor Android <strong>en</strong> iOS</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Push-notificaties</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Altijd up-to-date</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Custom splash screen en icon</li>
+                            <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
+                        </ul>
+                        <span class="c-pack__price u-center">€699,-</span>
+                        <a href="#" class="c-btn c-btn--primary">Kies pakket</a>
+                    </div>    
+                </div>
+                <div class="c-pack">
+                    <div class="c-pack__inner c-pack__inner--alt">
+                        <h3 class="c-pack__title">Maatwerk</h3>
+                        <div class="c-pack__list">
+                            <p>Een volledig maatwerk app laten bouwen? Dan ben je bij ons aan het juiste adres!</p>
+                            <p>Wij onderzoeken graag samen met jou wat de mogelijkheden zijn. Geheel vrijblijvend natuurlijk!</p>
+                        </div>
+                        <span class="c-pack__price u-center">€699,-</span>
+                        <a href="#" class="c-btn c-btn--secondary">Neem contact op</a>
+                    </div>    
+                </div>
             </div>
 
         </div>

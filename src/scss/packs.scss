@@ -10,17 +10,27 @@
 .c-pack {
     padding: 25px;
     &__inner {
+        display: flex;
+        flex-direction: column;
         height: 100%;
         padding: 30px 30px;
         border-radius: 15px;
         background-color: #fff;
         box-shadow: 0px 10px 40px rgba(197, 231, 255, 0.4);
+        &--alt {
+            background-color: $title;
+            color: #fff;
+            .c-pack__title {
+                color: #fff;
+            }
+        }
         @media(min-width: $md) {
             padding: 60px 50px;
         }
     }
     &__title {
         margin-bottom: 1.3em;
+        font-size: 24px;
         text-align: center;
         @media(min-width: $md) {
             font-size: 30px;
@@ -29,23 +39,42 @@
     @media(min-width: $md) {
        width: 33.3333%;
     }
+    .c-btn {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+        text-align: center;
+    }
 }
 
 .c-pack__list {
     padding: 0;
     font-size: 18px;
+    line-height: 1.9;
     list-style: none;
+    p:first-of-type { margin-top: 0; }
+    p:last-of-type { margin-bottom: 0; }
     li {
         position: relative;
         padding-left: 1.6em;
-        line-height: 1.55;
         &+li {
             margin-top: 16px;
         }
         svg {
             position: absolute;
-            top: 0.2em;
+            top: 0.3em;
             left: 0;
         }
+    }
+}
+
+.c-pack__price {
+    display: block;
+    margin: 34px 0;
+    color: $title;
+    font-weight: bold;
+    line-height: 1.2;
+    @media(min-width: $md) {
+        font-size: 24px;
     }
 }
