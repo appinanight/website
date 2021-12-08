@@ -64,6 +64,12 @@
         background-color: rgba($secondary, 0.2);
         color: $secondary;
     }
+    &--alt {
+        .is-active & {
+            background-color: rgba($primary, 0.2);
+            color: $primary;
+        }
+    }
 }
 
 .c-switch__content {
@@ -91,6 +97,9 @@
         right: -20%;
         margin-top: 0;
         transform: translateY(-50%);
+        &--alt {
+            right: -12%;
+        }
         svg {
             width: 750px;
         }

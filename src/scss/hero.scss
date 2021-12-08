@@ -9,6 +9,9 @@
 }
 
 .c-hero__col {
+    &--compact {
+        max-width: 600px;
+    }
     &:last-of-type:not(:first-of-type) {
         display: none;
         position: absolute;

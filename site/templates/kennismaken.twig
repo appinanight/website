@@ -1,0 +1,52 @@
+{% extends 'layouts/master.twig' %}
+
+{# 
+    Use the bodyClass block to add an additional class to <body> for this template 
+#}
+{% block bodyClass 'white' %}
+
+{% block content %}
+    <div class="o-container">
+        <div class="c-hero c-hero--alt">
+            <div class="c-hero__col c-hero__col--compact">
+                <h1 class="h1">Aangenaam kennis te maken.</h2>
+                <div class="o-default">
+                    <p>Aangenaam kennis te maken. App in a Night, of makkelijker gezegd “aian”, is opgezet door drie jonge ondernemers met een passie voor het creëren van creatieve projecten. Wij zijn gespecialiseerd in het ontwerpen en ontwikkelen van apps en websites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="o-section">
+        <div class="c-employees">
+            <img class="c-employee-line" src="/assets/images/line.svg" alt="">
+            <div class="c-employee">
+                <div class="c-employee__media">
+                    {{ source('@snippets/svg/lars.svg') }}
+                </div>
+                <div class="c-employee__content">
+                    <h2 class="c-employee__title">Digitale Picasso</h2>
+                    <p>Met zijn creatieve hersenspinsels zet hij op basis van jouw wensen prachtige ontwerpen op het canvas.</p>
+                </div>
+            </div>
+            <div class="c-employee">
+                <div class="c-employee__media">
+                    {{ source('@snippets/svg/bart.svg') }}
+                </div>
+                <div class="c-employee__content">
+                    <h2 class="c-employee__title">Technische Tovenaar</h2>
+                    <p>Met zijn creatieve hersenspinsels zet hij op basis van jouw wensen prachtige ontwerpen op het canvas.</p>
+                </div>
+            </div>
+            <div class="c-employee">
+                <div class="c-employee__media">
+                    {{ source('@snippets/svg/tom.svg') }}
+                </div>
+                <div class="c-employee__content">
+                    <h2 class="c-employee__title">The Numbers Man</h2>
+                    <p>Met zijn creatieve hersenspinsels zet hij op basis van jouw wensen prachtige ontwerpen op het canvas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
