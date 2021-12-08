@@ -1,8 +1,9 @@
 .c-employees {
     position: relative;
-    max-width: 1250px;
+    max-width: 1368px;
     padding: 0 20px;
     @media(min-width: $md) {
+        margin-top: 188px;
         padding: 0 40px;
     }
 }
@@ -12,6 +13,12 @@
         margin-top: 100px;
         @media(min-width: $md) {
             margin-top: 200px;
+        }
+    }
+    &__title {
+        font-size: 25px;
+        @media(min-width: $md) {
+            font-size: 34px;
         }
     }
     @media(min-width: $md) {
@@ -41,12 +48,25 @@
 .c-employee__content {
     @media(min-width: $md) {
         flex: 1;
+        .c-employee:nth-of-type(2) & {
+            margin-top: 80px;
+        }
+        .c-employee:nth-of-type(3) & {
+            margin-top: 120px;
+        }
     }
 }
 
 
 .c-employee__media {
+    position: relative;
     width: 400px;
+    &:first-of-type {
+        @media(min-width: $md) {
+            top: -46px;
+            left: -9px;
+        }
+    }
     .c-employee:nth-of-type(2) & {
         width: 550px;
     }
@@ -65,6 +85,6 @@
 
 .c-employee-line {
     position: absolute;
-    top: -380px;
-    left: 100px;
+    top: -397px;
+    left: 166px;
 }
