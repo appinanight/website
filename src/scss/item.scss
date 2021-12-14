@@ -15,6 +15,9 @@
         border-radius: 15px;
         background-color: #fff;
         box-shadow: 0px 10px 40px rgba(197, 231, 255, 0.4);
+        .bg-alt & {
+            box-shadow: 0px 10px 40px rgba(255, 224, 177, 0.4);
+        }
     }
     @media(min-width: $md) {
         &--3 {

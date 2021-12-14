@@ -69,6 +69,13 @@
         font-size: 25px;
         font-weight: bold;
         text-decoration: none;
+        
+        &.is-active {
+            &:not(.c-btn) {
+                color: $secondary;
+            }
+        }
+
         @media(min-width: $md) {
             font-size: 18px;
             &:hover {
@@ -92,6 +99,10 @@
         }
     }
     .c-btn {
+        .bg-alt & {
+            background-color: $secondary;
+            box-shadow: 0px 5px 30px rgba(255, 203, 124, 0.6);
+        }
         color: #fff;
     }
     @media(max-width: $md-max) {

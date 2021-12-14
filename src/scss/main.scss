@@ -30,10 +30,12 @@ body {
     margin: 0;
     padding: 100px 0 0 0;
     background: linear-gradient(180deg, #ECF7FF 0%, rgba(236, 247, 255, 0.5) 50.52%, rgba(236, 247, 255, 0) 100%);
+
     color: $body;
     // SASS namespacing example
     font-family: $fontFamily;
     line-height: 2.2em;
+
     @media(min-width: $md) {
         padding-top: 40px;
         font-size: 20px;
@@ -73,5 +75,21 @@ h4, .h4 {
     font-weight: bold;
     @media(min-width: $md) {
         font-size: 20px;
+    }
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vw;
+    background-image: url('/assets/images/bg-blue.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    pointer-events: none;
+    .bg-alt & {
+        background-image: url('/assets/images/bg-orange.svg');
     }
 }

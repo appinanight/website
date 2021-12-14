@@ -11,18 +11,18 @@
         <div class="c-header__inner">
             <span class="c-header__inner-bg"></span>
             <div class="c-header__part">
-                {{ source('@snippets/svg/_logo.svg') }}
+                <a href="/">{{ source('@snippets/svg/_logo.svg') }}</a>
             </div>
             <div class="c-header__part">
                 <ul class="c-nav">
                     <li class="js-nav-clip">
-                        <a href="/ik-wil-een-app">Apps</a>
+                        <a href="/ik-wil-een-app" class="{{page.slug == 'ik-wil-een-app' ? 'is-active' }}">Apps</a>
                     </li>
                     <li class="js-nav-clip">
-                        <a href="/ik-wil-een-website">Websites</a>
+                        <a href="/ik-wil-een-website" class="{{page.slug == 'ik-wil-een-website' ? 'is-active' }}">Websites</a>
                     </li>
                     <li class="js-nav-clip">
-                        <a href="/kennismaken">Even kennismaken</a>
+                        <a href="/kennismaken" class="{{page.slug == 'kennismaken' ? 'is-active' }}">Even kennismaken</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
                         <a href="#" class="c-nav-meta">EN</a>
                     </li> -->
                     <li class="js-nav-clip">
-                        <a href="#" class="c-btn c-btn--primary">Contact</a>
+                        <a href="/contact" class="c-btn c-btn--primary">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -3,15 +3,16 @@
 {# 
     Use the bodyClass block to add an additional class to <body> for this template 
 #}
-{% block bodyClass 'white' %}
+{% block bodyClass 'white bg-blue' %}
 
 {% block content %}
+    <span class="bg"></span>
     <div class="o-container">
         <div class="c-hero c-hero--alt">
             <div class="c-hero__col">
                 <h1 class="h1">Ontdek de voordelen<br>van een <span class="u-primary">app</span>.</h2>
                 <div class="o-default">
-                    <p>Zie hieronder een klein overzicht van wat een app voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="#">contact</a> op!</p>
+                    <p>Zie hieronder een klein overzicht van wat een app voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="/contact">contact</a> op!</p>
                 </div>
             </div>
         </div>
@@ -21,12 +22,12 @@
         <span class="c-blob"></span>
         <div class="o-container">
             <div class="c-items">
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/responsive.svg'), text: 'Volledig responsive' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/edit.svg'), text: 'Zelf te beheren' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/light.svg'), text: 'Eindeloze mogelijkheden' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/scalable-blue.svg'), text: 'Schaalbaar en flexibel' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/share.svg'), text: 'Deel jouw projecten' }) }}
                 {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/push-notifications.svg'), text: 'Dé manier om je klanten of gebruikers te bereiken.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Altijd up-to-date', icon: source('@snippets/svg/usp/update.svg'), text: 'Pas jij je website aan? Dan update dit automatisch binnen jouw app.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Cross-platform', icon: source('@snippets/svg/usp/platform.svg'), text: 'Geschikt voor zowel Android als iOS. Zo kun je iedereen bereiken.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Schaalbaar en flexibel', icon: source('@snippets/svg/usp/scalable.svg'), text: 'Altijd mogelijk om je app te upgraden naar Multi Platform of Maatwerk.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Klantenbinding', icon: source('@snippets/svg/usp/heart.svg'), text: 'Speel in op de behoeften van klanten en krijg er loyaliteit voor terug.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'No cure no pay', icon: source('@snippets/svg/usp/shield.svg'), text: 'Kunnen zélfs wij het niet fiksen? Dan betaal je niets!' }) }}
             </div>
         </div>
     </div>
@@ -74,7 +75,7 @@
                             <p>Een volledig maatwerk app laten bouwen? Dan ben je bij ons aan het juiste adres!</p>
                             <p>Wij onderzoeken graag samen met jou wat de mogelijkheden zijn. Geheel vrijblijvend natuurlijk!</p>
                         </div>
-                        <a href="#" class="c-btn c-btn--secondary">Neem contact op</a>
+                        <a href="/contact" class="c-btn c-btn--secondary">Neem contact op</a>
                     </div>    
                 </div>
             </div>

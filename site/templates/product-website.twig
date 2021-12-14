@@ -3,15 +3,16 @@
 {# 
     Use the bodyClass block to add an additional class to <body> for this template 
 #}
-{% block bodyClass 'white' %}
+{% block bodyClass 'white bg-alt' %}
 
 {% block content %}
+    <span class="bg"></span>
     <div class="o-container">
         <div class="c-hero c-hero--alt">
             <div class="c-hero__col">
                 <h1 class="h1">Ontdek de voordelen<br>van een <span class="u-secondary">website</span>.</h2>
                 <div class="o-default">
-                    <p>Zie hieronder een klein overzicht van wat een nieuwe website voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="#">contact</a> op!</p>
+                    <p>Zie hieronder een klein overzicht van wat een nieuwe website voor jou kan betekenen. Wil je meer komen te weten? Neem gerust <a href="/contact">contact</a> op!</p>
                 </div>
             </div>
         </div>
@@ -21,12 +22,12 @@
         <span class="c-blob"></span>
         <div class="o-container">
             <div class="c-items">
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/responsive.svg'), text: 'Volledig responsive' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/edit.svg'), text: 'Zelf te beheren' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/light.svg'), text: 'Eindeloze mogelijkheden' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/scalable-blue.svg'), text: 'Schaalbaar en flexibel' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/share.svg'), text: 'Deel jouw projecten' }) }}
-                {{ include('@snippets/usp.twig', {cols: '3', title: 'Push-notificaties', icon: source('@snippets/svg/usp/push-notifications.svg'), text: 'Dé manier om je klanten of gebruikers te bereiken.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Volledig responsive', icon: source('@snippets/svg/usp/responsive.svg'), text: 'Geoptimaliseerd voor mobiel, tablet en desktop.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Zelf te beheren', icon: source('@snippets/svg/usp/edit.svg'), text: 'In een gebruiksvriendelijke omgeving je website aanpassen.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Eindeloze mogelijkheden', icon: source('@snippets/svg/usp/light.svg'), text: 'Wilde creatieve ideeën? Wij denken graag met je mee!' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Schaalbaar en flexibel', icon: source('@snippets/svg/usp/scalable-blue.svg'), text: 'Uw website staat live, en nu? Blijven doorontwikkelen natuurlijk!' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Deel jouw projecten', icon: source('@snippets/svg/usp/share.svg'), text: 'Toon met trots je mooiste projecten aan je klanten.' }) }}
+                {{ include('@snippets/usp.twig', {cols: '3', title: 'Betrokken proces', icon: source('@snippets/svg/usp/betrokken.svg'), text: 'We besteden veel aandacht aan je wensen en bieden gepaste adviezen.' }) }}
             </div>
         </div>
     </div>
