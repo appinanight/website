@@ -24,3 +24,14 @@
 .u-relative {
     position: relative;
 }
+
+.u-read {
+    max-width: 456px;
+}
+
+.u-link {
+    color: $body;
+    &:hover {
+        text-decoration: none;
+    }
+}
