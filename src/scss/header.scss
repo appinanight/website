@@ -95,9 +95,12 @@
     li {
         margin: 10px 0px;
         @media(min-width: $md) {
-            margin: 0 8px;
+            margin: 0 18px;
             &.c-nav-meta-item {
                 margin: 0 5px;
+            }
+            &.c-nav-item-alt {
+                margin-right: 0;
             }
         }
     }
