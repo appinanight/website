@@ -4,8 +4,11 @@
     Use the bodyClass block to add an additional class to <body> for this template 
 #}
 {% block bodyClass 'white bg-alt' %}
+{% block ogTitle %}Aian – Ik wil een website{% endblock %}
+{% block title %}Aian – Ik wil een website{% endblock %}
 
 {% block content %}
+<div class="u-hidden">
     <span class="bg"></span>
     <div class="o-container">
         <div class="c-hero c-hero--alt">
@@ -74,40 +77,40 @@
                     <div class="js-switch-item" data-switch-element="1">
                         <h2 class="c-switch__title js-switch-item-title">De discover fase</h2>
                         <div class="js-switch-item-content">
-                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
-                            <a href="#" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>In deze fase leren we jou en je bedrijf kennen. Wie zijn jullie en wat zijn de doelen? Ook willen we een globaal idee krijgen over de bijdrage van de website aan je bedrijf.</p>
+                            <a href="/contact" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/discover.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="2">
                         <h2 class="c-switch__title js-switch-item-title">De define fase</h2>
                         <div class="js-switch-item-content">
-                            <p>Plan maken obv wensen. Opmaken in presentatie, daarmee eens? Door, anders feedback. Elkaar goed begrijpen.</p>
-                            <a href="#" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>In deze fase gaan wij (Aian) aan de slag met de informatie die we hebben opgedaan uit de discover fase. We maken een uitgebreid plan die we vervolgens mij jullie delen. Bij akkoord op dit plan kunnen we beginnen aan de design fase.</p>
+                            <a href="/contact" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/define.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="3">
                         <h2 class="c-switch__title js-switch-item-title">De design fase</h2>
                         <div class="js-switch-item-content">
-                            <p>Plan omzetten in ontwerp. Presentatie en feedback momenten.</p>
-                            <a href="#" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>In deze fase zetten we het plan om in een grafisch ontwerp. Hier zal feedback op gegeven kunnen worden. Na akkoord kunnen we door met de development fase.</p>
+                            <a href="/contact" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/design.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="4">
                         <h2 class="c-switch__title js-switch-item-title">De develop fase</h2>
                         <div class="js-switch-item-content">
-                            <p>Realiseren van ontwerp. Presentatie en feedback.</p>
-                            <a href="#" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>In deze fase wordt het ontwerp omgezet naar een tastbaar product. De website zal worden gepresenteerd op een testomgeving waar je zelf ook toegang tot zal krijgen. Ook hier zal ruimte worden gemaakt voor feedback momenten.</p>
+                            <a href="/contact" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/develop.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="5">
                         <h2 class="c-switch__title js-switch-item-title">De deliver fase</h2>
                         <div class="js-switch-item-content">
-                            <p>Klant krijgt tijd om content te vullen en te oriënteren op de demo. Opleveren project. Livegang.</p>
-                            <a href="#" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>In deze fase zal er tijd zijn om de website te vullen met content. Is alles in orde? Dan zetten we alles over naar een live omgeving. Nu is de website bereikbaar voor de buitenwereld.</p>
+                            <a href="/contact" class="c-link-btn c-link-btn--alt">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media js-switch-item-media">{{ source('@snippets/svg/steps/deliver.svg') }}</div>
                     </div>
@@ -118,6 +121,68 @@
         </div>
     </div>
 
-    {% include '@snippets/faq.twig' %}
+    <div class="o-section">
+        <div class="o-container">
+            <h2 class="u-center h1">Veelgestelde vragen</h2>
+            <div class="c-faq">
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Hoe werkt straks het beheren van mijn nieuwe website?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>We zorgen ervoor dat er je een eigen gebruiksvriendelijke beheeromgeving voor je nieuwe website hebt. Zo kun je zelf al je pagina’s, teksten, foto’s en dergelijken instellen. Kom je er niet uit? Dan helpen we je natuurlijk graag op weg!</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Hoelang duurt het voordat mijn website online staat?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Afhankelijk van de grootte van het project, kunnen wij de tijd bepalen. Hier maken we een duidelijke planning voor die ten alle tijden ingezien kan worden.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Wat zijn de kosten van een website?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>De kosten voor een website kunnen erg variëren. Neem gerust <a href="/contact">contact</a> op om de mogelijkheden te bespreken.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Hoe zorg ik ervoor dat mijn website up-to-date blijft?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>De website zal worden voorzien van een content management systeem. Hiermee kun je zelf de content van de website bijhouden. De website wordt tevens gemaakt met de nieuwste technologiën die ervoor zorgen dat de website niet snel zal verouderen.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Ik wil mijn website aanpassen, kunnen jullie mij daarbij helpen?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Hier kunnen wij zeer waarschijnlijk bij helpen. Neem gerust <a href="/contact">contact</a> op om de mogelijkheden te bespreken.</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

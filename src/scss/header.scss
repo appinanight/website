@@ -19,6 +19,9 @@
         padding: 20px 0;
         text-align: center;
         pointer-events: none;
+        .nav-open & {
+            pointer-events: all;
+        }
         @media(min-width: $md) {
             display: flex;
             position: relative;

@@ -4,8 +4,11 @@
     Use the bodyClass block to add an additional class to <body> for this template 
 #}
 {% block bodyClass 'white bg-blue' %}
+{% block ogTitle %}Aian – Ik wil een app{% endblock %}
+{% block title %}Aian – Ik wil een app{% endblock %}
 
 {% block content %}
+<div class="u-hidden">
     <span class="bg"></span>
     <div class="o-container">
         <div class="c-hero c-hero--alt">
@@ -50,7 +53,7 @@
                             <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
                         </ul>
                         <span class="c-pack__price u-center">€699,-</span>
-                        <a href="#" class="c-btn c-btn--primary">Kies pakket</a>
+                        <a href="mailto:hello@aian.digital?subject=Ik ben geïnteresseerd in het Single Platform pakket" class="c-btn c-btn--primary">Kies pakket</a>
                     </div>    
                 </div>
                 <div class="c-pack">
@@ -64,8 +67,8 @@
                             <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}Custom splash screen en icon</li>
                             <li class="c-pack__item">{{ source('@snippets/svg/_check.svg') }}No cure no pay garantie</li>
                         </ul>
-                        <span class="c-pack__price u-center">€699,-</span>
-                        <a href="#" class="c-btn c-btn--primary">Kies pakket</a>
+                        <span class="c-pack__price u-center">€1199,-</span>
+                        <a href="mailto:hello@aian.digital?subject=Ik ben geïnteresseerd in het Multi Platform pakket" class="c-btn c-btn--primary">Kies pakket</a>
                     </div>    
                 </div>
                 <div class="c-pack">
@@ -113,24 +116,24 @@
                     <div class="js-switch-item" data-switch-element="1">
                         <h2 class="c-switch__title js-switch-item-title">Pakket keuze</h2>
                         <div class="js-switch-item-content">
-                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
-                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>Eerst moeten we vaststellen welk pakket het beste bij jou past. Wil je een app voor iOS, Android of toch liever maatwerk?</p>
+                            <a href="/contact" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media c-switch__media--alt js-switch-item-media">{{ source('@snippets/svg/steps/app-1.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="2">
                         <h2 class="c-switch__title js-switch-item-title">Validatie</h2>
                         <div class="js-switch-item-content">
-                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
-                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>Om jouw app in de App Store en Google Play store te krijgen moet deze aan een aantal eisen voldoen. Deze zullen wij zorgvuldig checken.</p>
+                            <a href="/contact" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media c-switch__media--alt js-switch-item-media">{{ source('@snippets/svg/steps/app-2.svg') }}</div>
                     </div>
                     <div class="js-switch-item" data-switch-element="3">
                         <h2 class="c-switch__title js-switch-item-title">Uploaden</h2>
                         <div class="js-switch-item-content">
-                            <p>Ontmoeting, leren kennen, Wensen verzamelen, Wie wat waarom, doelgroep, onderzoek. Dit doen we samen.</p>
-                            <a href="#" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
+                            <p>De laatste stap is het uploaden naar de app stores. Mochten deze de app toch niet accepteren, dan betaal jij helemaal niets!</p>
+                            <a href="/contact" class="c-link-btn">Start jouw project<span>&nbsp;{{ source('@snippets/svg/_arrow.svg') }}</span></a>
                         </div>
                         <div class="c-switch__media c-switch__media--alt js-switch-item-media">{{ source('@snippets/svg/steps/app-3.svg') }}</div>
                     </div>
@@ -141,6 +144,67 @@
         </div>
     </div>
 
-    {% include '@snippets/faq.twig' %}
-
+    <div class="o-section">
+        <div class="o-container">
+            <h2 class="u-center h1">Veelgestelde vragen</h2>
+            <div class="c-faq">
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Hoelang duurt het voordat mijn app live staat?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Dit verschilt per platform. Bij Apple duurt dit meestal 2 tot 5 werkdagen en bij Google 5 tot 10 werkdagen. Mocht het voorkomen dat dit wat langer duurt, dan laten we het je uiteraard weten.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Push notificaties versturen, hoe werkt dat precies?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Via een duidelijke interface kun je op elk moment een bericht sturen naar gebruikers die je app hebben geïnstalleerd. Zo kun jij je gebruikers up-to-date houden.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Wat zijn de kosten van een maatwerk applicatie?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>De kosten voor een maatwerk applicatie kunnen erg variëren. Neem gerust <a href="/contact">contact</a> op om de mogelijkheden te bespreken.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Hoe zorg ik ervoor dat mijn app up-to-date blijft?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Als we jouw website omtoveren tot een app, hoef je alleen de website te onderhouden. Wij zorgen ervoor dat jouw app altijd up-to-date blijft met je website. Bij een maatwerk app kunnen we hier duidelijke afspraken in maken.</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="c-faq__item js-faq">
+                    <span class="c-faq__trigger js-faq-trigger">
+                        Ik wil mijn app aanpassen, kunnen jullie mij daarbij helpen?
+                        {{ source('@snippets/svg/_toggle.svg') }}
+                    </span>
+                    <div class="c-faq__content js-faq-content">
+                        <div class="o-default">
+                            <p>Hier kunnen wij zeer waarschijnlijk bij helpen. Neem gerust <a href="/contact">contact</a> op om de mogelijkheden te bespreken.</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
