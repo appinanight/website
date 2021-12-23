@@ -1,6 +1,8 @@
 .c-employees {
     position: relative;
     max-width: 1368px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 20px;
     @media(min-width: $md) {
         margin-top: 188px;
